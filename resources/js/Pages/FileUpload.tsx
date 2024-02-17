@@ -3,11 +3,16 @@ import { useForm } from "@inertiajs/react";
 
 const FileUpload = () => {
     const { setData, post } = useForm({
-        file: "",
+        file: [],
     });
 
+    const handleFile = (e) => {
+        setData('file', e.target.files);
+    }
+
     return (
-        <div className="flex w-full items-center justify-center bg-grey-lighter mt-20">
+        <div className="relative ring-1 ring-gray-900/5 leading-none flex w-full items-center justify-center bg-grey-lighter">
+            
             <label className="w-64 flex flex-col items-center px-4 py-6 bg-white text-blue rounded-lg shadow-lg tracking-wide uppercase border border-blue cursor-pointer hover:bg-blue  hover:shadow-outline">
                 <svg
                     className="w-8 h-8"
@@ -23,10 +28,7 @@ const FileUpload = () => {
                 <input
                     type="file"
                     className="hidden"
-                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => {
-                        const file = e.target.files?.[0] || null;
-                        setData("file", file);
-                    }}
+                    onChange={handleFile}
                 />
             </label>
         </div>
