@@ -8,7 +8,7 @@ export default function Dashboard({ auth }: PageProps) {
             user={auth.user}
             header={
                 <h2 className="font-semibold text-xl text-gray-800 leading-tight">
-                    Dashboard
+                    Dashboard tets
                 </h2>
             }
         >
