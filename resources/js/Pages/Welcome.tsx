@@ -42,7 +42,12 @@ export default function Welcome({
                     <h1 className="text-white text-6xl font-extrabold">
                         PDF to Excel Converter
                     </h1>
-                    <FileUpload/>
+                   
+                        <div className="relative max-w-7xl mx-auto mt-10">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25"></div>
+       <FileUpload/>
+</div>
+                    
 
                     <div className="mt-16 flex justify-center">
                         <div className="text-center text-sm sm:text-start">
