@@ -1,13 +1,18 @@
-import React, { useState } from "react";
+import React, { ChangeEvent, useState } from "react";
 import { useForm } from "@inertiajs/react";
 
 const FileUpload = () => {
     const { setData, post } = useForm({
-        file: [],
+        file: '',
     });
 
-    const handleFile = (e) => {
-        setData('file', e.target.files);
+    const handleFile = (e: ChangeEvent<HTMLInputElement>) => {
+        const selectedFile = e.target.files?.[0];
+        
+        if (selectedFile) {
+            
+            setData('file', selectedFile.name);
+        }
     }
 
     return (
