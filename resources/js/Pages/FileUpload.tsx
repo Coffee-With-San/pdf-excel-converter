@@ -10,7 +10,7 @@ const FileUpload = () => {
         const selectedFile = e.target.files?.[0];
         
         if (selectedFile) {
-            
+            console.log(selectedFile);
             setData('file', selectedFile.name);
         }
     }

@@ -40,7 +40,7 @@ export default function Welcome({
 
                 <div className="max-w-7xl mx-auto p-6 lg:p-8 flex flex-col justify-center">
                     <h1 className="text-white text-6xl font-extrabold">
-                        PDF to Excel Converter by coffeewithsan.com
+                        PDF to Excel Converter
                     </h1>
                    
                         <div className="relative max-w-7xl mx-auto mt-10">
