@@ -55,7 +55,7 @@ export default function Welcome({
                         </div>
 
                         <div className="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-end sm:ms-0">
-                            PDF to Excel Converter v{laravelVersion} (San Corp.
+                            PDF to Excel Converter v{laravelVersion} (coffeewithsan.com
                             v{phpVersion})
                         </div>
                     </div>
