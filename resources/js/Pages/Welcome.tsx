@@ -40,14 +40,13 @@ export default function Welcome({
 
                 <div className="max-w-7xl mx-auto p-6 lg:p-8 flex flex-col justify-center">
                     <h1 className="text-white text-6xl font-extrabold">
-                        PDF to Excel Converter
+                        {/* PDF to Excel Converter */}
                     </h1>
-                   
-                        <div className="relative max-w-7xl mx-auto mt-10">
-                        <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25"></div>
-       <FileUpload/>
-</div>
-                    
+
+                    {/* <div className="relative max-w-7xl mx-auto mt-10">
+                        <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg blur opacity-25"></div> */}
+                        <FileUpload />
+                    {/* </div> */}
 
                     <div className="mt-16 flex justify-center">
                         <div className="text-center text-sm sm:text-start">
@@ -55,8 +54,8 @@ export default function Welcome({
                         </div>
 
                         <div className="text-center text-sm text-gray-500 dark:text-gray-400 sm:text-end sm:ms-0">
-                            PDF to Excel Converter v{laravelVersion} (coffeewithsan.com
-                            v{phpVersion})
+                            PDF to Excel Converter v{laravelVersion}{" "}
+                            (coffeewithsan.com v{phpVersion})
                         </div>
                     </div>
                 </div>
