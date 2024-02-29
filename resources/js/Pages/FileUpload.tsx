@@ -1,5 +1,5 @@
-import React, { ChangeEvent, useState } from "react";
-import { useForm } from "@inertiajs/react";
+import React, { ChangeEvent, useEffect } from "react";
+import { useForm, router } from "@inertiajs/react";
 
 const FileUpload = () => {
     const { data, setData, post } = useForm({
@@ -11,6 +11,7 @@ const FileUpload = () => {
 
         if (selectedFile) {
             setData("file", selectedFile);
+            router.post(route("file.upload"), { file: selectedFile });
         }
     };
     const uploadHandle = (e) => {
@@ -44,13 +45,13 @@ const FileUpload = () => {
                 </div>
             </div>
             <div>
-                <button
+                {/* <button
                     onClick={uploadHandle}
                     type="button"
                     className="text-white bg-gradient-to-r from-purple-500 to-pink-500 hover:bg-gradient-to-l focus:ring-4 focus:outline-none focus:ring-purple-200 dark:focus:ring-purple-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
                 >
                     Convert
-                </button>
+                </button> */}
             </div>
         </div>
     );
